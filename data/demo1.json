@@ -1,0 +1,17 @@
+{
+    "nodes": [
+    { "uuid": "0","typename": "compute", "name": "0", "cost": 10, "space_cost": 5 },
+    { "uuid": "1","typename": "compute", "name": "1", "cost": 9 , "space_cost": 50 },
+    { "uuid": "2","typename": "communication", "name": "2", "cost": 4, "space_cost": 5 },
+    { "uuid": "3","typename": "communication", "name": "3", "cost": 4, "space_cost": 5 },
+    { "uuid": "4","typename": "communication", "name": "4", "cost": 4, "space_cost": 5 },
+    { "uuid": "5","typename": "compute", "name": "5", "cost": 10 , "space_cost": 5 }],
+    "edges": [
+    { "from": "0", "to": "1", "typename": "compute", "cost": 1 },
+    { "from": "0", "to": "2", "typename": "compute", "cost": 2 },
+    { "from": "1", "to": "3", "typename": "compute", "cost": 3 },
+    { "from": "2", "to": "3", "typename": "communication", "cost": 3 },
+    { "from": "2", "to": "4", "typename": "communication", "cost": 2 },
+    { "from": "3", "to": "5", "typename": "compute", "cost": 2 },
+    { "from": "4", "to": "5", "typename": "compute", "cost": 1 }]
+}
